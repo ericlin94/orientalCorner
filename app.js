@@ -15,7 +15,9 @@ var commentRoutes   =require("./routes/comments"),
     resturantRoutes =require("./routes/resturants"),
     indexRoutes     =require("./routes/index");
 
-mongoose.connect("mongodb://localhost/oriental_corner");
+//mongoose.connect("mongodb://localhost/oriental_corner");
+mongoose.connect("mongodb://eric50818244:eric40418204@ds141514.mlab.com:41514/oriental_corner");
+
 app.use(bodyparser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname+"/public"));
